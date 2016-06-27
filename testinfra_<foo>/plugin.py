@@ -4,9 +4,9 @@ import pytest
 
 
 @pytest.fixture()
-def Echo(Command):
+def <foo>(Command):
 
     def f(arg):
-        return Command.check_output("echo %s", arg)
+        return Command.check_output("<foo> %s", arg)
 
     return f
